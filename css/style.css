@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	overflow: auto;
+	font-family: arial;
+}
+body {
+	padding: 20px;
+}
+/*..............................*/
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+	background: #04AA6D;
+	color:  #fff;
+}
+td {
+	background: #f1f1f1;
+
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.dialog_box {
+	background: #f1f1f1;
+	position: absolute;
+	top: 10%;
+	left:  0px;
+	right:  0px;
+	bottom: 0px;
+	margin: 0px auto;
+	width: 250px;
+	height: 250px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+.close_btn, .edit_btn {
+    padding: 6px 23px;
+    background: #fff;
+    border: 1px solid black;
+    color: #000;
+    cursor: pointer;
+    margin: 0px auto;
+    width: 48%
+}

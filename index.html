@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>List View</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="list_view">
+		<table>
+			<tr>
+				<th>NAME</th>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click1">Alfreds Futterkiste</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click2">Centro comercial Moctezuma</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click3">Ernst Handel</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click4">Island Trading</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click5">Laughing Bacchus Winecellars</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" id="click6">Magazzini Alimentari Riuniti</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="dialog_box" id="dialog1" style="display: none;">
+
+		<form>
+			<label for="html">Name:</label>
+			<label for="html">Alfreds Futterkiste</label>
+			<br>
+			<br>
+
+			<label for="css">Age:</label>
+			<label for="css">28</label>
+			<br>
+			<br>
+
+			<label for="javascript">Roll No:</label>
+			<label for="javascript">29</label>
+
+			<br><br>
+			<button id="close" class="close_btn">Close</button>
+			<button id="edit" class="edit_btn">Edit</button>
+		</form>
+
+	</div>
+
+<script>
+	$('#click1, #click2, #click3, #click4, #click5, #click6').click(function(){
+		$('#dialog1').show();
+	});
+	// ........
+	$('#close').click(function(){
+		$('#dialog1').hide();
+	})
+</script>
+
+</body>
+</html>
